@@ -10,6 +10,7 @@ class QuickCheckSuite extends munit.FunSuite:
 
   test("Bogus (1) binomial heap does not satisfy properties. (10pts)") {
     checkBogus(quickcheck.test.Bogus1BinomialHeap())(_.insertMinAndGetMin, _.deleteAllProducesSortedList, _.meldingHeaps)
+    // checkBogus(quickcheck.test.BinomialHeap())(_.minOfTwo, _.deleteMinOfOne)
   }
 
   test("Bogus (2) binomial heap does not satisfy properties. (10pts)") {
